@@ -4,6 +4,7 @@
     --background: #F4ECE1;
     --primary: #2F2F2F;
     --secondary: #FF7E00;
+    --primary-light: #909090;
 }
 
 *{
@@ -12,6 +13,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* GENERAL */
+.button{
+    box-shadow: rgba(158, 158, 158, 0.2) 0px 8px 24px;
+    text-decoration: none;
+    color: var(--background);
+    background-color: var(--primary);
+    padding: 1rem 40px;
+    margin: 1rem;
+    border-radius: 2.5rem;
 }
 
 /* HEADER */
@@ -41,15 +53,97 @@ header{
 
 .search{
     display: flex;
-    padding: 20px;
-    box-shadow: 0 0 5rem 0 rgb(0, 0, 0);
+    padding: 20px 35px;
+    box-shadow: rgba(158, 158, 158, 0.2) 0px 8px 24px;
+    border-radius: 2rem;
+    font-size: 20px;
+    justify-content: space-around;
+    align-items: center;
+    outline: 1px solid #000;
+    height: 60px;
+    margin: 2rem 0;
+    border: none;
 }
 
 .search-thing{
     display: flex;
+    color: #000;
+    align-items: center;
+}
+
+.search-thing input{border: none;}
+.search-thing input:focus{outline: none;}
+.search-thing .search-icon{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
 }
 
 /* MAIN */
 main{
     display: flex;
+    margin: 0 5rem 0  ;
+    color: var(--primary);
+    justify-content: space-between;
+}
+
+/* TÍTULO */
+.texto{margin-bottom: 5rem;}
+
+.title{
+    display: flex;
+    align-items: center;
+    
+}
+
+.texto h2{
+    color: var(--secondary);
+    font-size: 8rem;
+    margin-right: 1rem;
+}
+
+.texto h3{
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 800;
+}
+
+.texto p{
+    color: var(--primary-light);
+    font-size: 22px;
+}
+
+/* REFERENCES */
+.references{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.references .video{
+    display: flex;
+    align-items: center;
+}
+
+.references .video a, .references .video img{background-color: #FFF8F0;}
+
+.references .video img{
+    height: 1rem;
+    width: 1rem;
+}
+
+.references .video a{
+    padding: 1rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.star-rating{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.testemonies{
+    color: var(--primary-light);
+    font-weight: normal;
 }
