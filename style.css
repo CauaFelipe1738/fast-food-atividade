@@ -88,7 +88,10 @@ main{
 }
 
 /* TÍTULO */
-.texto{margin-bottom: 5rem;}
+.texto{
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
 
 .title{
     display: flex;
