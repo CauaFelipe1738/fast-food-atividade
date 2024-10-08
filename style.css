@@ -29,9 +29,9 @@
 /* HEADER */
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #000;
-    margin: 48px 65px 40px 85px;
+    margin: 48px 65px 0px 85px;
 }
 
 .logo{
@@ -84,7 +84,7 @@ main{
     display: flex;
     margin: 0 5rem 0  ;
     color: var(--primary);
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 /* TÍTULO */
